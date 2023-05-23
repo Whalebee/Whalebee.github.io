@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Whalebee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "일어날 일은 반드시 일어난다, 그럼에도 주도적이어야한다."
+  location         : "South Korea"
+  email            : "islhoeve@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
