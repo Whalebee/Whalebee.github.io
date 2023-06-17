@@ -23,6 +23,7 @@ toc_sticky : true
 # 글을 처음 작성한 날짜
 date : 2023-06-18
 last-modified-at : 2023-06-18
+side bar : nav : "foo"
 ---
 
 
