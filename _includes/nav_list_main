@@ -51,6 +51,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            {% comment %} <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "linux" %}
+                        <li><a href="/categories/linux" class="">linux ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> {% endcomment %}
 
         <span class="nav__sub-title">Coding Test</span>
             <ul>
