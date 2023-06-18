@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "default"  "air", "aqua", "contrast", , "dir
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : " 평생 공부 블로그 : Today I Learned‍ 🌙"
+title                    : "가치있는 것들을 배우는 것은 나를 기쁘게 하는구나 🥰"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "WhalBee"
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "WhaleBee"
   avatar           : # "https://user-images.githubusercontent.com/42318591/108615416-2e1bb580-7447-11eb-8a54-6338e53ce625.png"
-  bio              : "반갑습니다 :)"
+  bio              : "아무리 멀어도 한 걸음씩 가면 도착할거야 :)"
   #location         : "Seoul, South Korea"
   links:
     - label: "Email"
