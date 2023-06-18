@@ -8,8 +8,8 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">C/C++/C#</span>
-            <ul>
+        <span class="nav__sub-title">Linux</span>
+            {% comment %} <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cpp" %}
                         <li><a href="/categories/cpp" class="">C ++ ({{category[1].size}})</a></li>
@@ -43,7 +43,7 @@
                         <li><a href="/categories/csharp" class="">C # ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> {% endcomment %}
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "C" %}
@@ -59,7 +59,7 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Coding Test</span>
+        {% comment %} <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
@@ -278,7 +278,7 @@
                         <li><a href="/categories/bitcoin" class="">블록체인 암호화폐 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> {% endcomment %}
       </li>
       <li>	
             <br>      
