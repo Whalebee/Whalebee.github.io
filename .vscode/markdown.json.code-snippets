@@ -1,0 +1,28 @@
+// markdown snippet
+{
+// 	코드 조각 제목 : 임의로 작성할 수 있는 코드 조각의 이름입니다.
+// 	prefix : 중요한 항목으로 에디터에서 여기 있는 글자를 쓰면 body의 내용이 작성됩니다.
+// 	body : 중요한 항목으로 prefix에 해당하는 명령어가 실행되면 실제로 에디터에 작성될 내용입니다.
+// 	description : 코드 뭉치의 설명입니다. 본인만 사용할 거면 굳이 중요하지는 않습니다.
+
+// {
+//     "[markdown]": {
+//         "editor.quickSuggestions": true
+//     }
+// }
+// Ctr + Shift + P를 통해 빈 공간인 📄settings.json에 위 코드를 추가한다. 이제 마크다운 파일을 작성할 때 Ctrl + Space 없이 b 까지만 쳐도 바로 \n<br>\n 을 자동입력 할 수 있게 된다! 편리 편리~~
+
+
+
+// "do_underline": {
+// 	"prefix": "un", 
+// 		"body": [
+// 			"<u>","</u>"
+// 		],
+// 		"description": "typing Underline command"
+// 	}
+
+
+
+
+}
