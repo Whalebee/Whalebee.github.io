@@ -1,3 +1,3 @@
-## 블로그 포스팅과 커스터마이징 하는 공간입니다. 😀💛
+## 가치있는 일은 나를 기쁘게 하는구나 🥰
 
-<https://ansohxxn.github.io>
+<https://whalebee.github.io>
