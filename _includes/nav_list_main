@@ -24,7 +24,7 @@
                 {% endfor %}
             </ul>
 
-        {% comment %} <span class="nav__sub-title">Coding Test</span>
+        <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
@@ -243,7 +243,7 @@
                         <li><a href="/categories/bitcoin" class="">블록체인 암호화폐 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul> {% endcomment %}
+            </ul>
       </li>
       <li>	
             <br>      
