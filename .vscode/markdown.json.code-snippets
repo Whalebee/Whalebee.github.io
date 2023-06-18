@@ -22,7 +22,15 @@
 // 		"description": "typing Underline command"
 // 	}
 
-
+"raw endraw": {
+	"prefix": "raw", 
+		"body": [
+			"{% raw %}",
+            "$1",
+            "{% endraw %}"
+		],
+		"description": "template raw $ endraw"
+	}
 
 
 }
