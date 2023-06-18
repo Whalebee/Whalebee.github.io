@@ -1,5 +1,5 @@
 ---
-title: "Jekyll/Github 블로그 만들기"
+title: "Jekyll/Github Page를 이용한 블로그 만들기 !"
 layout: archive
 permalink: categories/blog
 author_profile: true
