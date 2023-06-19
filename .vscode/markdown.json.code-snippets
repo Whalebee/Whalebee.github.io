@@ -21,6 +21,14 @@
 // 		],
 // 		"description": "typing Underline command"
 // 	}
+"change the line": {
+	"prefix": "br", 
+		"body": [
+			"$1",
+            "<br>"
+		],
+		"description": "shift the line"
+	},
 
 "raw endraw": {
 	"prefix": "raw", 
@@ -32,41 +40,70 @@
 		"description": "template raw $ endraw"
 	},
 
-"categories template": {
-	"prefix": "catetem", 
+
+"nav_list template": {
+	"prefix": "nav_temp", 
 		"body": [
-			"---",
-			"title: 타이틀명",
-			"layout: archive",
-			"permalink: categories/소문자파일이름",
-			"author_profile: true",
-			"sidebar_main: true",
-			"---",
-			"",
-			"<!-- 공백이 포함되어 있는 카테고리 이름의 경우 site.categories.['a b c'] 이런식으로! -->",
-			"",
-			"***",
-			"",
-			"{% assign posts = site.categories.타이틀명 %}",
-			"{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}"
+			"            <ul>",
+            "            {% for category in site.categories %}",
+            "               {% if category[0] == \"nav_categori_main\" %}",
+            "                   <li><a href=\"/categories/nav_categori_sub\" class=\"\">그냥 왼쪽 사이드바 이름 ({{category[1].size}})</a></li>",
+            "               {% endif %}",
+            "            {% endfor %}",
+            "            <!--메인은 nav_categori_main <-> 카테고리폴더_site_경로 <-> post파일 안에 categories -->",
+            "            <!--서브는 /categories/nav_categori_sub <-> 카테고리폴더_permalink-->",
+            "            </ul>"
 		],
-		"description": "categories default template"
-	}
+		"description": "template of nav_list"
+	},
 
 
+"posts template": {
+    "prefix": "post_template", 
+        "body": [
+            "<!-- post 폴더 이름 -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) -->",
+            "---",
+            "title:  \"포스트 제목 ( 자유 )\"",
+            "",
+            "categories:",
+            "  - nav_categori_main",
+            "tags:",
+            "  - [tag1, tag2, tag3] ",
+            "",
+            "toc: true",
+            "toc_sticky: true",
+            "",
+            "date: 2023-06-19",
+            "last_modified_at: 2023-06-19",
+            "---"
+        ],
+        "description": "template of posts"
+    },
 
-// 	---
-// title: "Linux"
-// layout: archive
-// permalink: categories/linux
-// author_profile: true
-// sidebar_main: true
-// ---
 
-// <!-- 공백이 포함되어 있는 카테고리 이름의 경우 site.categories.['a b c'] 이런식으로! -->
+"categories template": {
+    "prefix": "cate_tem", 
+            "body": [
+                "<!-- ( 폴더 이름은 category-c-question.md  -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) ) -->",
+                "---",
+                "title: \"자유, 사이드바에서 클릭하고난 다음 맨 위에 타이틀\"",
+                "layout: archive",
+                "permalink: categories/nav_categori_sub",
+                "author_profile: true",
+                "sidebar_main: true",
+                "---",
+                "",
+                "<!-- 공백이 포함되어 있는 카테고리 이름의 경우 site.categories.['a b c'] 이런식으로! -->",
+                "",
+                "***",
+                "",
+                "{% assign posts = site.categories.['c-question-main-lv1'] %}",
+                "{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}"
+            ],
+            "description": "categories default template"
+        }
+    
+    
 
-// ***
 
-// {% assign posts = site.categories.Linux %}
-// {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
 }

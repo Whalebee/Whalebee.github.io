@@ -9,7 +9,23 @@
       </li>
       <li>
         <span class="nav__sub-title">Linux/MariaDB</span>
-            {% comment %} <ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "MariaDB" %}
+                        <li><a href="/categories/mariadb" class="">MariaDB ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Linux" %}
+                        <li><a href="/categories/linux" class="">Linux ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">C</span>
+                    {% comment %} <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cpp" %}
                         <li><a href="/categories/cpp" class="">C ++ ({{category[1].size}})</a></li>
@@ -47,21 +63,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "C" %}
-                        <li><a href="/categories/c" class="">C ({{category[1].size}})</a></li>
+                        <li><a href="/categories/c" class="">C 언어 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "MariaDB" %}
-                        <li><a href="/categories/mariadb" class="">MariaDB ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Linux" %}
-                        <li><a href="/categories/linux" class="">Linux ({{category[1].size}})</a></li>
+                    {% if category[0] == "c-question-lv1" %}
+                        <li><a href="/categories/c-question-sub-lv1" class="">C Question-초급 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
