@@ -54,7 +54,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "MariaDB" %}
-                        <li><a href="/categories/maridb" class="">MariaDB ({{category[1].size}})</a></li>
+                        <li><a href="/categories/mariadb" class="">MariaDB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
