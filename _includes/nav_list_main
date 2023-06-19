@@ -8,7 +8,7 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">Linux</span>
+        <span class="nav__sub-title">Linux/MariaDB</span>
             {% comment %} <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cpp" %}
@@ -48,6 +48,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "C" %}
                         <li><a href="/categories/c" class="">C ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "MariaDB" %}
+                        <li><a href="/categories/c" class="">MariaDB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
