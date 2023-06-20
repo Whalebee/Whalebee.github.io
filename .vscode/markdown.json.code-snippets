@@ -61,7 +61,6 @@
 "posts template": {
     "prefix": "post_template", 
         "body": [
-            "<!-- post 폴더 이름 -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) -->",
             "---",
             "title:  \"포스트 제목 ( 자유 )\"",
             "",
@@ -75,7 +74,11 @@
             "",
             "date: 2023-06-19",
             "last_modified_at: 2023-06-19",
-            "---"
+            "---",
+            "",
+            "",
+            "",
+            "<!-- post 폴더 이름 -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) -->"
         ],
         "description": "template of posts"
     },
@@ -84,7 +87,6 @@
 "categories template": {
     "prefix": "cate_tem", 
             "body": [
-                "<!-- ( 폴더 이름은 category-c-question.md  -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) ) -->",
                 "---",
                 "title: \"자유, 사이드바에서 클릭하고난 다음 맨 위에 타이틀\"",
                 "layout: archive",
@@ -98,7 +100,11 @@
                 "***",
                 "",
                 "{% assign posts = site.categories.['c-question-main-lv1'] %}",
-                "{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}"
+                "{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}",
+                "",
+                "",
+                "",
+                "<!-- ( 폴더 이름은 category-c-question.md  -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) ) -->"
             ],
             "description": "categories default template"
         }
