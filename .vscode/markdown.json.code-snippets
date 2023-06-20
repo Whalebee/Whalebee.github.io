@@ -107,9 +107,35 @@
                 "<!-- ( 폴더 이름은 category-c-question.md  -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) ) -->"
             ],
             "description": "categories default template"
+        },
+
+
+    "toggle_auto": {
+        "prefix": "toggle_auto", 
+            "body": [
+                "<details>",
+                "<summary>","$1","</summary>",
+                "<div markdown=\"1\">",
+                "",
+                "</div>",
+                "</details>"
+            ],
+            "description": "auto typing toggle list"
+        },
+    
+    "make_snippet": {
+        "prefix": "make_snippet", 
+            "body": [
+                "    \"위에 컴마 찍고 snippet 제목\": {",
+                "        \"prefix\": \"축약어\",",
+                "            \"body\": [",
+                "                \"명령어들\",",
+                "            ],",
+                "            \"description\": \"내용\",",
+                "        },"
+            ],
+            "description": "shift the line"
         }
-    
-    
 
 
 }
