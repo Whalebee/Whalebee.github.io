@@ -1,0 +1,7 @@
+cd C:\Ruby24-x64\bin
+call setrbvars.cmd
+cd C:\Users\BOSS\Desktop\github_io\whalebee.github.io
+bundle exec jekyll serve
+
+
+bat 파일로 만들어서 실행하면 편해

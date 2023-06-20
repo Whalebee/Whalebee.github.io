@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "가치있는 것들을 배우는 것은 나를 기쁘게 하는구나 🥰"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "WhalBee"
+name                     : "whalbee"
 description              : "My first blog"
 # url                      : http://localhost:4000
 url                      : "https://whalebee.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -94,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "WhaleBee"
+  name             : "whalebee"
   avatar           : # "https://user-images.githubusercontent.com/42318591/108615416-2e1bb580-7447-11eb-8a54-6338e53ce625.png"
   bio              : "아무리 멀어도 한 걸음씩 가면 도착할거야 :)"
   #location         : "Seoul, South Korea"
