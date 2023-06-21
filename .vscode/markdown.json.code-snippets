@@ -62,7 +62,7 @@
     "prefix": "post_template", 
         "body": [
             "---",
-            "title:  \"포스트 제목 ( 자유 )\"",
+            "title:  \"[카테고리]포스트 제목(자유)\"",
             "",
             "categories:",
             "  - nav_categori_main",
@@ -72,11 +72,9 @@
             "toc: true",
             "toc_sticky: true",
             "",
-            "date: 2023-06-19",
-            "last_modified_at: 2023-06-19",
+            "date: 2023-mm-yy",
+            "last_modified_at: 2023-mm-dd",
             "---",
-            "",
-            "",
             "",
             "<!-- post 폴더 이름 -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) -->"
         ],
@@ -101,8 +99,6 @@
                 "",
                 "{% assign posts = site.categories.['nav_categori_main'] %}",
                 "{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}",
-                "",
-                "",
                 "",
                 "<!-- ( 폴더 이름은 category-c-question.md  -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) ) -->"
             ],
