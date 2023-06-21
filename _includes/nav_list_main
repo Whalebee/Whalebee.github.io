@@ -279,6 +279,7 @@
                 {% endfor %}
             </ul>
         {% endcomment %}
+        {% comment %}
         <span class="nav__sub-title">etc</span>
             <ul>
                 {% for category in site.categories %}
@@ -287,7 +288,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            {% comment %}
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Design Pattern" %}
