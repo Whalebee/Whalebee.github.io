@@ -50,9 +50,9 @@
             "                   <li><a href=\"/categories/nav_categori_sub\" class=\"\">그냥 왼쪽 사이드바 이름 ({{category[1].size}})</a></li>",
             "               {% endif %}",
             "            {% endfor %}",
+            "            </ul>",
             "            <!--메인은 nav_categori_main <-> 카테고리폴더_site_경로 <-> post파일 안에 categories -->",
-            "            <!--서브는 /categories/nav_categori_sub <-> 카테고리폴더_permalink-->",
-            "            </ul>"
+            "            <!--서브는 /categories/nav_categori_sub <-> 카테고리폴더_permalink-->"
 		],
 		"description": "template of nav_list"
 	},

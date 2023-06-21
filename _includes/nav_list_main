@@ -40,8 +40,6 @@
                         <li><a href="/categories/Network_sub" class="">네트워크 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-                <!--메인은 nav_categori_main <-> 카테고리폴더_site_경로 <-> post파일 안에 categories -->
-                <!--서브는 /categories/nav_categori_sub <-> 카테고리폴더_permalink-->
             </ul>
             <ul>
                 {% for category in site.categories %}
@@ -69,7 +67,7 @@
             </ul>
 
 
-            
+
             {% comment %} 
             <span class="nav__sub-title">Coding Test</span>
             <ul>
