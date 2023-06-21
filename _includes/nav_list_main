@@ -30,9 +30,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        
-
-
         <span class="nav__sub-title">네트워크/DB</span>
             <ul>
                 {% for category in site.categories %}
@@ -48,8 +45,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
-        
         <span class="nav__sub-title">etc</span>
             <ul>
             {% for category in site.categories %}
@@ -65,9 +60,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
-
-
             {% comment %} 
             <span class="nav__sub-title">Coding Test</span>
             <ul>
@@ -106,8 +98,6 @@
                 {% endfor %}
             </ul>
             {% endcomment %}
-
-
             {% comment %}
             <span class="nav__sub-title">C</span>
                          <ul>
@@ -146,8 +136,8 @@
                     {% endfor %}
                 </ul> 
                 {% endcomment %}
-
-
+                
+        {% comment %}
         <span class="nav__sub-title">Unity</span>
             <ul>
                 {% for category in site.categories %}
@@ -288,6 +278,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        {% endcomment %}
         <span class="nav__sub-title">etc</span>
             <ul>
                 {% for category in site.categories %}
@@ -296,6 +287,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            {% comment %}
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Design Pattern" %}
@@ -324,7 +316,8 @@
                         <li><a href="/categories/bitcoin" class="">블록체인 암호화폐 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul> {% endcomment %}
+            </ul>
+            {% endcomment %}
       </li>
       {% comment %} <li>	
             <br>      
