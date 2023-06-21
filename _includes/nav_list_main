@@ -8,14 +8,7 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">Linux/MariaDB</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "MariaDB" %}
-                        <li><a href="/categories/mariadb" class="">MariaDB ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+        <span class="nav__sub-title">Linux/C</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Linux" %}
@@ -23,43 +16,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
-        <span class="nav__sub-title">C</span>
-                    {% comment %} <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Cpp" %}
-                        <li><a href="/categories/cpp" class="">C ++ ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "STL" %}
-                        <li><a href="/categories/stl" class="">C++ STL & 표준 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "C++ games" %}
-                        <li><a href="/categories/cpp-games" class="">C++ 연습 문제 패키지 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Cpp Network" %}
-                        <li><a href="/categories/cpp-network" class="">C++ Boost.Asio 네트워크 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "C Sharp" %}
-                        <li><a href="/categories/csharp" class="">C # ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul> {% endcomment %}
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "C" %}
@@ -71,6 +27,26 @@
                 {% for category in site.categories %}
                     {% if category[0] == "c-question-lv1" %}
                         <li><a href="/categories/c-question-sub-lv1" class="">C Question-초급 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        
+
+
+        <span class="nav__sub-title">네트워크/DB</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Network_main" %}
+                        <li><a href="/categories/Network_sub" class="">네트워크 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+                <!--메인은 nav_categori_main <-> 카테고리폴더_site_경로 <-> post파일 안에 categories -->
+                <!--서브는 /categories/nav_categori_sub <-> 카테고리폴더_permalink-->
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "MariaDB" %}
+                        <li><a href="/categories/mariadb" class="">MariaDB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -91,7 +67,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        {% comment %} <span class="nav__sub-title">Coding Test</span>
+
+
+            
+            {% comment %} 
+            <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
@@ -127,6 +107,48 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            {% endcomment %}
+
+
+            {% comment %}
+            <span class="nav__sub-title">C</span>
+                         <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "Cpp" %}
+                            <li><a href="/categories/cpp" class="">C ++ ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "STL" %}
+                            <li><a href="/categories/stl" class="">C++ STL & 표준 ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "C++ games" %}
+                            <li><a href="/categories/cpp-games" class="">C++ 연습 문제 패키지 ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "Cpp Network" %}
+                            <li><a href="/categories/cpp-network" class="">C++ Boost.Asio 네트워크 ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "C Sharp" %}
+                            <li><a href="/categories/csharp" class="">C # ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul> 
+                {% endcomment %}
+
 
         <span class="nav__sub-title">Unity</span>
             <ul>
