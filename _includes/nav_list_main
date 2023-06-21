@@ -36,7 +36,7 @@
         <span class="nav__sub-title">네트워크/DB</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Network_main" %}
+                    {% if category[0] == "Network" %}
                         <li><a href="/categories/Network_sub" class="">네트워크 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}

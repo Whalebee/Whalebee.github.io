@@ -99,7 +99,7 @@
                 "",
                 "***",
                 "",
-                "{% assign posts = site.categories.['c-question-main-lv1'] %}",
+                "{% assign posts = site.categories.['nav_categori_main'] %}",
                 "{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}",
                 "",
                 "",
@@ -114,7 +114,7 @@
         "prefix": "toggle_auto", 
             "body": [
                 "<details>",
-                "<summary>","$1","</summary>",
+                "<summary> $1 </summary>",
                 "<div markdown=\"1\">",
                 "",
                 "</div>",
