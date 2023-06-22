@@ -30,7 +30,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">네트워크/DB</span>
+        <span class="nav__sub-title">Network/DB</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Network" %}
