@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 
 date: 2023-06-20
-last_modified_at: 2023-06-20
+last_modified_at: 2023-06-24
 ---
 <!-- post 폴더 이름 -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) -->
 ```
@@ -60,7 +60,8 @@ $ apt upgrade -y ( 굉장히 오래 걸림 )
 
 ## 2. Win-client
 ### 2-1. IIS 설치 ( internet information server )
-- appwiz.cpl로 ftp설치한 것 처럼 설치해준다 ( 스샷 있음 )
+- appwiz.cpl로 ftp설치한 것과 같이 아래처럼 설치해준다
+- ![K-004](https://github.com/whalebee/Whalebee.github.io/assets/127908829/e3062f92-1ef8-4395-af94-1ba53b61f0f5)
 - 3개 부분 체크
 - DHCP 해제
 - win-client의 핑을 알기 위해 cmd에서 ipconfig
