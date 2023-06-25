@@ -1,0 +1,43 @@
+bat 파일로 만들어서 실행하면 편해
+```
+cd C:\Ruby24-x64\bin
+call setrbvars.cmd
+cd C:\Users\BOSS\Desktop\github_io\whalebee.github.io
+bundle exec jekyll serve
+```
+
+
+https://ideone.com/ -> 코드 실행할 수 있는 온라인 코드 러너
+
+준비해야할 능력들
+
+10분동안 내 프로젝트 PPT 설명하기 ( 면접 )
+
+기술적 면접: 본인이 썼던 PPT나 프로젝트, 블로그에서 사용한 기술들의 정의와 장점, 단점
+
+파이썬 - 계산기 만들기 약 1주일 -> 증빙을 위한 PPT 필요
+만들고 나서 결과를 가지고 어떤 식으로 만들어졌는지 설명해주는 방식으로
+( 기능위주로 필요한 것만 !! ), 트러블슈팅!!!!(개중요함, 이게 승부처임), 느낀점, 개선사항, 비교 등
+
+핸들링을 잘 할 줄 알아야한다 !!
+
+
+
+
+
+Ctrl + shift + v -> embed 보기 -> Preview -> 이제 잘 안 쓰일 듯 ㅋㅋ disable 해놓자
+
+
+오른쪽 위 사이드바에서 preview는 이미지파일 볼 수 있음 (embed 빼고 다 봄) 보기 -> live preview extention -> 삭제하고
+테마까지 다 쓸 수 있는 markdown preview github syling extention 사용함
+security 설정에 가면 disable 설정을 해주면 embed 다 보임 !!
+Ctrl + shift + V -> 새 탭으로
+Ctrl + K + V -> 사이드바로 보여줌
+
+
+ctrl + v 로 이미지 붙여넣기 하는 건 -> gistpad 임
+얘는 수정하고 있는 파일의 경로에 image 파일을 만들어주기 때문에 그 안에서 쓸 용도로 사용하면 된다.
+
+
+markdown image 얘는 alt + shift + v 인데 얘는 images 폴더를 따로 만들어서 쓰기때문에
+공용으로 써야할 사진들을 붙여넣는데 좋아
