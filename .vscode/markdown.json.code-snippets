@@ -131,7 +131,16 @@
                 "        },"
             ],
             "description": "shift the line"
-        }
+        },
+
+        "ideone 링크": {
+            "prefix": "ideone",
+                "body": [
+                    "[ideone으로 가기](https://ideone.com/)"
+                ],
+                "description": "link to ideone.com",
+            },
+
 
 
 }
