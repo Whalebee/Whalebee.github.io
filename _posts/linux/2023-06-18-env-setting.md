@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 
 date: 2023-06-18
-last_modified_at: 2023-06-18
+last_modified_at: 2023-07-08
 ---
 
 ## ▶ 1. iso 파일을 이용한 설치
@@ -82,6 +82,7 @@ vim과 net-tools는 이미 설치되어 있다 !
 - 설치시 모두 default 설정으로 해준다
 - 파티션 할 필요 X / Normal installation / Don't Upgrade  <u>but</u> **do software update**
 - 리스타트 후에 아래 명령어들을 입력하여 도구 설치
+- DHCP 연결이 이상하게 된다면, server A의 53번 포트를 확인해볼 것 !
 
 ```
 $ apt install net-tools
@@ -182,7 +183,10 @@ $ banner_file=/srv/ftp/welcome.msg
 #### ▶ 3-3-1 mate-client <u>telnet</u> 설정 & Test
 - `$ apt install net-tools` 설치
 - `$ telnet 192.168.111.100` Test
-
+```
+혹시나 방화벽과 프로세스를 모두 확인했는데도 되지 않는다면
+인터넷 설정 자체를 새로 만들어 볼 것
+```
 #### ▶ 3-3-2 mate-client <u>ssh</u> 설정 & Test
 - `$ ssh ubuntu@192.168.111.100` Test
 #### ▶ 3-3-3 mate-client <u>ftp</u> 설정 & Test
@@ -191,7 +195,7 @@ $ banner_file=/srv/ftp/welcome.msg
 ```
 `$ vi /etc/host.conf`명령어로 order(순서)를 확인할 수 있다 ! ( 참고용 )
 ```
-- `$ vi /etc/resolv.conf`명령어로 nameserverf를 server a의 IP주소로 바꿔준다.
+- `$ vi /etc/resolv.conf`명령어로 nameserverf를 server a의 IP주소로 바꿔준다. ( 매번 들어갈 때마다 초기화 된다 .)
 - `$ ifconfig`입력시 개인의 IP가 나와야한다. 192.168.111.?
 - `$ nslookup www.google.com`입력시 address에는 <u>server a</u>의 IP주소가 나와야한다
 - 인터넷(FireFox)으로 `www.john.com` 입력하여 테스트
