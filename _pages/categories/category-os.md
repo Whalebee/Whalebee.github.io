@@ -10,7 +10,7 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.['OS'] %}
+{% assign posts = site.categories.OS %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
 
 <!-- ( 폴더 이름은 category-c-question.md  -> 연관성을 찾지못함 ( 이상하게 바꿔도 정상적으로 작동했기때문 ) ) -->
