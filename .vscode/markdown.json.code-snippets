@@ -23,12 +23,134 @@
 // 	}
 "change the line": {
 	"prefix": "br", 
-		"body": [
-			"$1",
-            "<br>"
+		"body": [ "<br>",
+            "$1"
 		],
 		"description": "shift the line"
 	},
+
+"color_red": {
+        "prefix": "c_red", 
+            "body": [ "<span style=\"color:red\"> $1 </span>"
+            ],
+            "description": "change the color"
+        },
+"color_brown": {
+        "prefix": "c_brown", 
+            "body": [ "<span style=\"color:brown\"> $1 </span>"
+            ],
+            "description": "change the color"
+        },
+"color_yellow": {
+    "prefix": "c_yellow", 
+        "body": [ "<span style=\"color:yellow\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+"color_blue": {
+    "prefix": "c_blue", 
+        "body": [ "<span style=\"color:blue\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+"color_orange": {
+        "prefix": "c_orange", 
+            "body": [ "<span style=\"color:orange\"> $1 </span>"
+            ],
+            "description": "change the color"
+        },
+"color_green": {
+        "prefix": "c_green", 
+            "body": [ "<span style=\"color:green\"> $1 </span>"
+            ],
+            "description": "change the color"
+        },
+"color_violet": {
+    "prefix": "c_violet", 
+        "body": [ "<span style=\"color:violet\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+"color_yellowgreen": {
+    "prefix": "c_yellowgreen", 
+        "body": [ "<span style=\"color:yellowgreen\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+"color_blueviolet": {
+        "prefix": "c_blueviolet", 
+            "body": [ "<span style=\"color:blueviolet\"> $1 </span>"
+            ],
+            "description": "change the color"
+        },
+"color_gray": {
+        "prefix": "c_gray", 
+            "body": [ "<span style=\"color:gray\"> $1 </span>"
+            ],
+            "description": "change the color"
+        },
+"color_indigo": {
+    "prefix": "c_indigo", 
+        "body": [ "<span style=\"color:indigo\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+"color_turquoise": {
+    "prefix": "c_turquoise", 
+        "body": [ "<span style=\"color:#00FFFF\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+    
+
+
+"color_back_yellow": {
+    "prefix": "cb_yellow", 
+        "body": [ "<span style=\"background-color:#fff5b1\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+"color_back_red": {
+    "prefix": "cb_red", 
+        "body": [ "<span style=\"background-color:#FFE6E6\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+"color_back_violet": {
+    "prefix": "cb_violet", 
+        "body": [ "<span style=\"background-color:#E6E6FA\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+"color_back_blue": {
+    "prefix": "cb_blue", 
+        "body": [ "<span style=\"background-color:#C0FFFF\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+"color_back_green": {
+    "prefix": "cb_green", 
+        "body": [ "<span style=\"background-color:#DCFFE4\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
+
+   
+
+
+"typing_need_header": {
+    "prefix": "n_header", 
+        "body": [ "<span style=\"color:green\"> 필요한 헤더 </span> <br>",
+        "$1"
+        ],
+        "description": "change the color"
+        },
+"typing_header": {
+    "prefix": "t_header", 
+        "body": [ "<span style=\"color:gray\"> #include <$1.h> </span> <br>"
+        ],
+        "description": "change the color"
+        },
 
 "raw endraw": {
 	"prefix": "raw", 
