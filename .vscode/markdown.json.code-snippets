@@ -29,6 +29,32 @@
 		"description": "shift the line"
 	},
 
+"change the line_4": {
+    "prefix": "4br", 
+        "body": [ "<br>",
+            "<br>",
+            "<br>",
+            "<br>",
+            "$1"
+        ],
+        "description": "shift the line 4"
+    },
+
+"typing client": {
+    "prefix": "ㅋㄹ", 
+        "body": [ "<span style=\"color:orange\"> 클라이언트 </span>$1"
+        ],
+        "description": "typing client"
+    },
+    
+"typing server": {
+    "prefix": "ㅅㅂ", 
+        "body": [ "<span style=\"color:green\"> 서버 </span>$1"
+        ],
+        "description": "typing server"
+    },
+
+
 "color_red": {
         "prefix": "c_red", 
             "body": [ "<span style=\"color:red\"> $1 </span>"
@@ -101,7 +127,14 @@
         ],
         "description": "change the color"
     },
+"color_skyblue": {
+    "prefix": "c_skyblue", 
+        "body": [ "<span style=\"color:#87CEEB\"> $1 </span>"
+        ],
+        "description": "change the color"
+    },
     
+
 
 
 "color_back_yellow": {
