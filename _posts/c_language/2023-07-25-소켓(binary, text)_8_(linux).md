@@ -60,7 +60,7 @@ last_modified_at: 2023-07-26
 <summary> <span style="color:orange"> 클라이언트 </span> </summary>
 <div markdown="1">
 
-```C
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -162,7 +162,7 @@ void error_handling(char* message)
 <summary> <span style="color:green"> 서버 </span> </summary>
 <div markdown="1">
 
-```C
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -281,7 +281,7 @@ void error_handling(char* message)
 <summary> <span style="color:orange"> 클라이언트 </span> </summary>
 <div markdown="1">
 
-```C
+```c
 
 ```
 </div>
@@ -295,7 +295,7 @@ void error_handling(char* message)
 <summary> <span style="color:green"> 서버 </span> </summary>
 <div markdown="1">
 
-```C
+```c
 
 ```
 </div>
@@ -320,7 +320,7 @@ void error_handling(char* message)
 
 ## 1. FILE* text_fp -> fopen 사용 문제
 
-```C
+```c
 FILE* fp;
 fp = fopen(file_name, "rt");
 ```
