@@ -15,7 +15,7 @@ last_modified_at: 2023-07-28
 
 
 - <span style="color:yellow"> 코드 </span>
-- 
+  
 ```c
 #include <pcap.h>
 #include <stdio.h>
@@ -501,10 +501,15 @@ int pcap_loop(pcap_t *p, int cnt, pcap_handler callback, u_char* user)
 
 # 3. 피드백 & Tips
 
-1. file="pcap-003" ; gcc -o $file $file.c -lpcap && ./$file
+1. gcc 할 때 file 사용
+
+```c
+file="pcap-003" ; gcc -o $file $file.c -lpcap && ./$file
+```
 
 2. echo $?
-0이면 정상종료
+
+0이면 정상종료 <br>
 오류가 났을 때는 1로 나오게 됨 ( 숫자가 커질수록 보통 더 오류가 심각함 )
 
 
