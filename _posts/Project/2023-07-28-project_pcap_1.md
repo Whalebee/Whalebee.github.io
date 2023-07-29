@@ -14,8 +14,11 @@ last_modified_at: 2023-07-28
 ---
 
 
-- <span style="color:yellow"> 코드 </span>
-  
+
+<details>
+<summary> <span style="color:yellow"> 코드 </span> </summary>
+<div markdown="1">
+
 ```c
 #include <pcap.h>
 #include <stdio.h>
@@ -258,7 +261,14 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header,
 } // end of got_packet
 ```
 
-# 1. 코드 분석
+
+</div>
+</details>
+
+
+
+
+# 코드 분석
 
 
 ## 1. 변수 선언
@@ -346,7 +356,7 @@ struct pcap_pkthdr {
 <br>
 <br>
 
-# 2. 사용한 pcap 라이브러리의 함수 총 정리
+# 사용한 pcap 라이브러리의 함수 총 정리
 
 
 ## 2-1. pcap_lookup
@@ -499,7 +509,7 @@ int pcap_loop(pcap_t *p, int cnt, pcap_handler callback, u_char* user)
 <br>
 
 
-# 3. 피드백 & Tips
+# 피드백 & Tips
 
 1. gcc 할 때 file 사용
 
