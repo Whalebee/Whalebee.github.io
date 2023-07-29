@@ -265,7 +265,14 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header,
 </div>
 </details>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 # 코드 분석
@@ -284,11 +291,11 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header,
 	const u_char *packet;		/* The actual packet */
 ```
 
-### 1. pcap_t *handle
+### 1. <span style="color:#00FFFF"> pcap_t </span> <span style="color:#87CEEB"> *handle </span>
 pcap_t 구조체는 네트워크 디바이스나 패킷에 들어있는 pcap파일에서 패킷을 읽는데 사용된다. <br>
 
-### 2. char* dev
-char* dev 라는 변수를 만들어 device의 정보를 담으려 했고, <br>
+### 2. <span style="color:#3399FF"> char* </span> <span style="color:#87CEEB"> dev </span>
+<span style="color:#3399FF"> char* </span> <span style="color:#87CEEB"> dev </span> 라는 변수를 만들어 device의 정보를 담으려 했고, <br>
 ```c
 dev = pcap_lookupdev(errbuf);
 if (dev == NULL) {
@@ -300,30 +307,29 @@ if (dev == NULL) {
 예상 결과 : enp0s3 라는 device의 이름이 dev에 저장된다. <br>
 
 
-### 3. char errbuf[PCAP_ERRBUF_SIZE]
+### 3. <span style="color:#3399FF"> char </span><span style="color:#87CEEB"> errbuf[PCAP_ERRBUF_SIZE] </span>  
 에러 문자열을 저장하기 위한 배열을 선언하였다. <br>
 <span style="color:violet"> PCAP_ERRBUF_SIZE </span> 는 <span style="color:violet"> 256바이트 </span> 이다. 
 
 
 
-### 4. struct bpf_program fp
+### 4. <span style="color:#00FFFF"> struct bpf_program  </span><span style="color:#87CEEB"> fp </span>
 bpf_program 구조체를 사용하기 위한 변수 선언
 
 
 
-### 5. char filter_exp[] = "port 80"
+### 5. <span style="color:#3399FF"> char </span><span style="color:#87CEEB"> filter_exp[] </span> = <span style="color:orange"> "port 80" </span>
 <span style="color:yellow"> pcap_compile() </span>함수에서 필터링을 쓰기위한 조건을 위해 선언한 변수이다. <br>
 
 
 
-### 6.bpf_u_int32 mask;		bpf_u_int32 net;
+### 6. <span style="color:#00FFFF"> bpf_u_int32  </span><span style="color:#87CEEB"> mask </span>;		<span style="color:#00FFFF"> bpf_u_int32 </span><span style="color:#87CEEB">  net </span> ;
 IP와 netmask를 저장하기 위한 변수 선언이다.
 
 
-### 7. struct pcap_pkthdr header
+### 7. <span style="color:#00FFFF"> struct pcap_pkthdr </span><span style="color:#87CEEB"> header </span>
 
 ```c
-원형
 struct pcap_pkthdr {
      struct timeval ts;
      bpf_u_int32 caplen; 
@@ -339,8 +345,12 @@ struct pcap_pkthdr {
 
 
 	
-### 8. const u_char *packet
+### 8. <span style="color:#3399FF"> const u_char </span><span style="color:#87CEEB"> *packet </span>
 
+- <span style="color:yellow"> pcap_loop() </span>함수를 실행했을 때 실행되는 <span style="color:yellow"> got_packet() </span>함수의 3번째 매개변수이다. <br>
+<br>
+
+- <span style="color:yellow"> got_packet() </span> 함수를 실행했을 때 이 packet 변수는 말 그대로 캡쳐한 패킷의 <span style="color:#00FF00"> 첫번째 주소 </span> 를 가리키고 있다.
 
 
 
@@ -359,10 +369,10 @@ struct pcap_pkthdr {
 # 사용한 pcap 라이브러리의 함수 총 정리
 
 
-## 2-1. pcap_lookup
+## 2-1. pcap_lookupdev
 
 ```c
-char* pcap_lookup(char* errbuf)
+char* pcap_lookupdev(char* errbuf)
 ```
 
 1. `Return Value` <br>
@@ -482,7 +492,7 @@ int pcap_loop(pcap_t *p, int cnt, pcap_handler callback, u_char* user)
 ```
 
 1. `Return Value` <br>
-<span style="color:#00FF00"> `성공시:` </span>  <span style="color:#00FF00"> cnt를 모두 소진이 0을 반환한다. </span> <br>
+<span style="color:#00FF00"> `성공시:` </span>  <span style="color:#00FF00"> cnt를 모두 소진했을 때 0을 반환한다. </span> <br>
 <span style="color:#FF0000"> `실패시:` </span> <span style="color:#FF0000"> pcap_breakloop()함수가 호출되어 cnt를 모두 소진하기 전에 loop가 깨지면 PCAP_ERROR_BREAK 를 반환한다. </span><br>
  
 2. `Parameter` <br>
