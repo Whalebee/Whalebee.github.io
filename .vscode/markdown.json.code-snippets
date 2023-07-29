@@ -40,6 +40,52 @@
         "description": "shift the line 4"
     },
 
+
+"typing suc and fail": {
+    "prefix": "ma_return_suc_fail", 
+        "body": [ "<span style=\"color:#00FF00\"> `성공시:` </span>  <span style=\"color:#00FF00\"> $1 </span> <br>",
+        "<span style=\"color:#FF0000\"> `실패시:` </span> <span style=\"color:#FF0000\">  </span><br>"
+        ],
+        "description": "typing retrun value"
+    },
+    
+    
+    
+"typing parameter": {
+    "prefix": "ma_parameter", 
+        "body": [ "<span style=\"color:#87CEEB\"> `$1` </span> <span style=\"color:#87CEEB\"> 내용 </span> <br>",
+        ],
+        "description": "typing parameter"
+    },
+
+
+"typing function": {
+    "prefix": "ma_function", 
+        "body": [ "1. `Return Value` <br>",
+        "<span style=\"color:#00FF00\"> `성공시:` </span>  <span style=\"color:#00FF00\"> 내용$1 </span> <br>",
+        "<span style=\"color:#FF0000\"> `실패시:` </span> <span style=\"color:#FF0000\"> 내용 </span><br>",
+        " ",
+        "2. `Parameter` <br>",
+        "<span style=\"color:#87CEEB\"> `이름` </span> <span style=\"color:#87CEEB\"> 내용 </span> <br>",
+        "<br>",
+        "<br>",
+        "<br>",
+        "<br>"
+        ],
+        "description": "typing function"
+    },
+
+
+
+"typing role": {
+    "prefix": "ma_role", 
+        "body": [ "- <span style=\"color:yellow\"> `역할:` </span> 내용$1 <br>",
+        ],
+        "description": "typing role"
+    },
+
+    
+
 "typing client": {
     "prefix": "ㅋㄹ", 
         "body": [ "<span style=\"color:orange\"> 클라이언트 </span>$1"
@@ -56,8 +102,8 @@
 
 
 "color_red": {
-        "prefix": "c_red", 
-            "body": [ "<span style=\"color:red\"> $1 </span>"
+        "prefix": "c_rred", 
+            "body": [ "<span style=\"color:#FF0000\"> $1 </span>"
             ],
             "description": "change the color"
         },
@@ -87,7 +133,7 @@
         },
 "color_green": {
         "prefix": "c_green", 
-            "body": [ "<span style=\"color:green\"> $1 </span>"
+            "body": [ "<span style=\"color:#00FF00\"> $1 </span>"
             ],
             "description": "change the color"
         },
