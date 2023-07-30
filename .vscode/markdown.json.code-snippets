@@ -76,7 +76,27 @@
     },
 
 
+// 구조체 변수 선언
+"typing struct": {
+    "prefix": "ma_struct", 
+        "body": [ "<span style=\"color:#00FFFF\"> 구조체이름$1 </span><span style=\"color:#87CEEB\"> 변수이름 </span>"
+        ],
+        "description": "declar struct"
+    },
 
+
+
+// 변수 선언
+"typing variable": {
+    "prefix": "ma_variable", 
+        "body": [ "<span style=\"color:#3399FF\"> 자료형이름$1 </span><span style=\"color:#87CEEB\"> 변수이름 </span>"
+        ],
+        "description": "declar variable"
+    },
+
+
+
+    // 역할
 "typing role": {
     "prefix": "ma_role", 
         "body": [ "- <span style=\"color:yellow\"> `역할:` </span> 내용$1 <br>",
@@ -86,6 +106,8 @@
 
     
 
+
+    // 클라, 서버
 "typing client": {
     "prefix": "ㅋㄹ", 
         "body": [ "<span style=\"color:orange\"> 클라이언트 </span>$1"
@@ -100,6 +122,13 @@
         "description": "typing server"
     },
 
+
+
+
+
+
+
+    // 색깔
 
 "color_red": {
         "prefix": "c_rred", 
@@ -121,7 +150,7 @@
     },
 "color_blue": {
     "prefix": "c_blue", 
-        "body": [ "<span style=\"color:blue\"> $1 </span>"
+        "body": [ "<span style=\"color:##3399FF\"> $1 </span>"
         ],
         "description": "change the color"
     },
