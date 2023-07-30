@@ -366,6 +366,93 @@ struct pcap_pkthdr {
 <br>
 <br>
 
+
+## 2. THE ACTUAL SNIFFING ( 공부 범위를 나누기 위한 분단 )
+
+```c
+#include <stdio.h>
+#include <pcap.h>
+
+int main(int argc, char* argv[])
+{
+	char *dev, errbuf[PCAP_ERRBUF_SIZE];
+
+	pcap_t *handle;
+
+	bpf_u_int32 net;
+	bpf_u_int32 mask;
+
+	struct bpf_program fp;
+	char filter_exp[] = "port 80";
+
+	const u_char *packet;
+	struct pcap_pkthdr header;
+	
+
+
+	dev = pcap_lookupdev(errbuf);
+	if( dev == NULL) {
+		fprintf(stderr, "could not find default device %s \n", errbuf);
+		return 2;
+	}
+
+	if( pcap_looknet(dev, &net, &mask, errbuf) == -1) {
+		fprintf(stderr, "can't get netmask for device %s : %s\n", dev, errbuf);
+		return 2;
+	}
+	
+	handle = pcap_open_live(dev, BUFSIZE, 1, 1000, errbuf);
+	if( handle == NULL) {
+		fprintf(stderr, "could not open device %s : %s\n", dev, errbuf);
+		return 2;
+	}
+
+	if( pcap_complie(handle, &fp, filter_exp, 0, net) == -1){
+		fprintf(stderr, "could not parse filter %s : %s\n", filter_exp, pcap_geterr(handle));
+		return 2;
+	}
+
+	if( pcap_setfilter(handle, &fp) == -1) {
+		fprintf(stderr, "could not install filter %s : %s\n", filter_exp, pcap_geterr(handle));
+		return 2;
+	}
+	
+
+
+	int result = 0;
+	result = pcap_loop(packet , 10, got_packet, NULL);
+	if( result != 0){
+		fprintf(stderr, "ERROR : pcap_loop() end with error !! \n");
+	} else {
+		fprintf(stderr, "INFO : pcap_loop() end without error \n");
+	}
+
+	pcap_close(handle);
+
+	return 0;
+}
+```
+여기까지 스니핑인데 반복문을 하지 않으면 <span style="color:yellow"> got_packet() </span>를 정의할 필요 없지만 반복해서 패킷을 캡쳐할 예정이기 때문에 정의해야만한다.<br>
+다음 과정에는 <span style="color:yellow"> got_packet() </span>의 정의와 Header 구조체들을 정의해보자.
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 # 사용한 pcap 라이브러리의 함수 총 정리
 
 
