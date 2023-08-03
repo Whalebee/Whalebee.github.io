@@ -40,6 +40,20 @@
         "description": "shift the line 4"
     },
 
+"change the line_8": {
+    "prefix": "44br", 
+        "body": [ "<br>",
+            "<br>",
+            "<br>",
+            "<br>",
+            "<br>",
+            "<br>",
+            "<br>",
+            "<br>",
+            "$1"
+        ],
+        "description": "shift the line 8"
+    },
 
 "typing suc and fail": {
     "prefix": "ma_return_suc_fail", 
@@ -150,7 +164,7 @@
     },
 "color_blue": {
     "prefix": "c_blue", 
-        "body": [ "<span style=\"color:##3399FF\"> $1 </span>"
+        "body": [ "<span style=\"color:#3399FF\"> $1 </span>"
         ],
         "description": "change the color"
     },
