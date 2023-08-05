@@ -21,6 +21,34 @@
 // 		],
 // 		"description": "typing Underline command"
 // 	}
+
+
+
+// function()
+
+"typing function sprintf()": {
+	"prefix": "f_sprintf()", 
+		"body": [ "<span style=\"color:yellow\"> `sprintf()` </span>$1"
+		],
+		"description": "typing function sprintf()"
+	},
+
+"typing function printf()": {
+    "prefix": "f_printf()", 
+        "body": [ "<span style=\"color:yellow\"> `printf()` </span>$1"
+        ],
+        "description": "typing function printf()"
+    },
+
+    
+"typing function mysql_query()": {
+    "prefix": "f_mysql_query()", 
+        "body": [ "<span style=\"color:yellow\"> `mysql_query()` </span>$1"
+        ],
+        "description": "typing function mysql_query()"
+    },
+
+// line
 "change the line": {
 	"prefix": "br", 
 		"body": [ "<br>",
@@ -54,6 +82,23 @@
         ],
         "description": "shift the line 8"
     },
+
+
+
+// font
+"change the font_size": {
+	"prefix": "font_size_150", 
+		"body": [ "<span style=\"font-size:150%\"> $1 </span>"
+		],
+		"description": "change font_size"
+	},
+
+
+
+    
+
+// etc
+
 
 "typing suc and fail": {
     "prefix": "ma_return_suc_fail", 
