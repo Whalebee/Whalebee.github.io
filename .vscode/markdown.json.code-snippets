@@ -99,7 +99,6 @@
 
 // etc
 
-
 "typing suc and fail": {
     "prefix": "ma_return_suc_fail", 
         "body": [ "<span style=\"color:#00FF00\"> `성공시:` </span>  <span style=\"color:#00FF00\"> $1 </span> <br>",
@@ -432,4 +431,26 @@
 
 
 
+
+
+
+
+// 단축어들
+            "app.js_yellow": {
+                "prefix": "app.js", 
+                    "body": [ "<span style=\"color:yellow\">app.js</span>$1"
+                    ],
+                    "description": "typing app.js as yellow color"
+                },
+            
+                "app.css_blue": {
+                    "prefix": "app.css", 
+                        "body": [ "<span style=\"color:#3399FF\">app.css</span>$1"
+                        ],
+                        "description": "typing app.css as yellow color"
+                    }
+
+                
+
 }
+
