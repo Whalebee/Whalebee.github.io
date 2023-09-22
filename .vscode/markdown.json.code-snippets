@@ -448,6 +448,13 @@
                         "body": [ "<span style=\"color:#3399FF\">app.css</span>$1"
                         ],
                         "description": "typing app.css as yellow color"
+                    },
+            
+                "React_orange": {
+                    "prefix": "React", 
+                        "body": [ "<span style=\"color:orange\">React</span>$1"
+                        ],
+                        "description": "typing React as yellow color"
                     }
 
                 
